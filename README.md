@@ -4,7 +4,7 @@ A fun and simple "whack-a-mole" style game built with Python's Turtle graphics l
 
 ---
 
-### Features
+## Features
 
 * **Interactive Gameplay:** Click on the turtle when it appears to score points.
 * **Customizable Settings:** Set the screen size, game duration, and turtle appearance speed.
@@ -13,7 +13,7 @@ A fun and simple "whack-a-mole" style game built with Python's Turtle graphics l
 
 ---
 
-### How to Run the Game
+## How to Run the Game
 
 **1. Prerequisites**
 
@@ -41,7 +41,7 @@ The game window will appear and you'll be prompted to enter your game settings d
 
 <hr>
 
-### How It Works
+## How It Works
 The game's functionality is broken down into several classes for clean and organized code:
 
 * `main.py`: The main entry point of the game. It handles user input, initializes all the other classes, and starts the game loop.
