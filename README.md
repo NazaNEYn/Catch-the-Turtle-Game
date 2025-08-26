@@ -1,15 +1,22 @@
 # Catch the Turtle 🐢
 
-A fun and simple "whack-a-mole" style game built with Python's Turtle graphics library. The goal is to click on the turtle as many times as you can before the time runs out!
+An interactive, "whack-a-mole" style arcade game built entirely using Python's built-in turtle library. This project is designed to be a clear and educational example of object-oriented programming (OOP) principles, state management, and event-driven programming in a simple game environment.
+
 
 ---
 
 ## Features
 
-* **Interactive Gameplay:** Click on the turtle when it appears to score points.
-* **Customizable Settings:** Set the screen size, game duration, and turtle appearance speed.
-* **Real-time Timer and Score:** A scoreboard tracks your progress and a countdown timer shows how much time you have left.
-* **Game Over Screen:** A final score is displayed when the game ends.
+* **Dynamic Gameplay:** A turtle randomly appears at different locations, and your goal is to click it to score points.
+
+* **Customizable Settings:** At startup, you can set the screen dimensions, the overall game duration, and the speed at which the turtle moves.
+
+* **Real-time Scoreboard:** A dedicated class manages and displays the player's score and a live countdown timer.
+
+* **Responsive Game State:** The turtle's movement and the timer stop automatically when the game ends.
+
+* **Object-Oriented Design:** The code is cleanly separated into different classes, each with a specific responsibility, making it easy to read and extend.
+
 
 ---
 
@@ -51,6 +58,21 @@ The game's functionality is broken down into several classes for clean and organ
 * `Scoreboard.py`: Manages all the information displayed to the player, including the current score and the real-time countdown timer.
 
 * `Target.py`: Represents the clickable turtle. It controls the turtle's random movements and appearance, and it detects when the player clicks on it.
+
+## Project Structure & Design
+The project is built using an object-oriented approach, where each part of the game is its own class. This separation of concerns makes the code modular and easy to manage.
+
+* `main.py`
+The **main entry point** of the program. It handles all initial setup, including getting user input, creating the screen, and instantiating the core objects of the game (`Game`, `Scoreboard`, and `Target`). It then starts the entire process by calling the `game_manager.start_game()` method.
+
+* `game.py`
+The **central game manager**. This class acts as a coordinator, connecting the other objects and managing the overall game state. It is responsible for starting the game loops for the timer and target, and more importantly, it sets a one-time "game over" timer. When this timer triggers, the `game_over()` method is called, which then commands the `Scoreboard` and `Target` to stop their loops.
+
+* `scoreboard.py`
+This class's sole responsibility is to **manage the display of the score and the timer**. It uses two separate `Turtle` objects to write the score and time on the screen. The countdown is handled by a self-scheduling loop using `ontimer()`.
+
+* `target.py`
+This class represents the **interactive game object**. It controls the turtle's random movements and appearance. It also contains the logic to detect a mouse click, update the score by communicating with the `Scoreboard`, and stop its own movement loop when commanded by the `Game` manager.
 
 
 
