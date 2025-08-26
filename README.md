@@ -75,5 +75,15 @@ This class's sole responsibility is to **manage the display of the score and the
 This class represents the **interactive game object**. It controls the turtle's random movements and appearance. It also contains the logic to detect a mouse click, update the score by communicating with the `Scoreboard`, and stop its own movement loop when commanded by the `Game` manager.
 
 
+## Customization
+
+The game is easy to customize. Simply open the relevant `.py` file and change the values to alter the game's appearance and behavior.
+
+* **Change Colors & Shapes:** In `target.py`, you can change the `shape` and `color` variables in the `__init__` method.
+* **Adjust Fonts:** In `scoreboard.py`, you can modify the `font` parameter in the `write()` methods to change the text style.
+* **Modify Game Logic:**
+    * Change the game's duration in `main.py` by altering the `game_timer_seconds` input.
+    * Adjust the turtle's appearance speed by changing the `user_timer` input.
+    * Change the hit radius for a click in `target.py` by modifying the `distance_from_target < 20` check.
 
 
