@@ -8,7 +8,7 @@ An interactive, "whack-a-mole" style arcade game built entirely using Python's b
 
 <hr>
 
----
+
 
 ## Features
 
