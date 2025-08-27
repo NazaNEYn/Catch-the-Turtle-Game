@@ -2,7 +2,6 @@
 
 An interactive, "whack-a-mole" style arcade game built entirely using Python's built-in turtle library. This project is designed to be a clear and educational example of object-oriented programming (OOP) principles, state management, and event-driven programming in a simple game environment.
 
-<hr>
 
 ### You can check out the video demo in my [tweet](https://x.com/nazanin_ashrafi/status/1960447274686820423).
 
