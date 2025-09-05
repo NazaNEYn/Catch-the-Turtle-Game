@@ -3,7 +3,11 @@
 An interactive, "whack-a-mole" style arcade game built entirely using Python's built-in turtle library. This project is designed to be a clear and educational example of object-oriented programming (OOP) principles, state management, and event-driven programming in a simple game environment.
 
 
-### You can check out the video demo in my [tweet](https://x.com/nazanin_ashrafi/status/1960447274686820423).
+### You can check out the video demo in my [tweet](https://x.com/nazanin_ashrafi/status/1960447274686820423) or you can click on the pic below and watch the demo on youtube.
+
+[![A video thumbnail for a video titled '2024 F1 British Grand Prix: Race Highlights'](https://github.com/user-attachments/assets/58d0e6e6-1cce-4680-bdaa-2c92b2e1f350)](https://www.youtube.com/watch?v=0xpLjfTc8iU)
+
+
 
 <hr>
 
